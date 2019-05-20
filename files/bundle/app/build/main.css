@@ -14975,7 +14975,7 @@ h4, h5, h6 {
     }
 
     .schedule_item__map ~ .schedule_item__wrap {
-        min-width: 60%
+§        min-width: 70%
     }
 }
 
@@ -15015,7 +15015,7 @@ h4, h5, h6 {
 
 @media (min-width: 1200px) {
     .schedule_item__wrap {
-        width: 60%
+        width: 70%
     }
 }
 
@@ -18500,11 +18500,12 @@ h4, h5, h6 {
 }
 
 .footer_first_about .footer_icons__item_link {
-    border-color: #f5aec0
+    border-color: #f5aec0;
+    color: #f5aec0;
 }
 
 .footer_first_about .footer_icons__item_link:hover {
-    background-color: #f5aec0
+    background-color: #f5aec0;
 }
 
 .footer_first_about .footer_icons__item_link:hover svg {

@@ -14350,12 +14350,6 @@ h4, h5, h6 {
     display: block
 }
 
-@media (min-width: 768px) {
-    .story_row:nth-of-type(odd) .story_info {
-        padding: 55px 90px 55px 0
-    }
-}
-
 .story_info {
     background-color: #fff;
     padding: 30px 10px
@@ -14975,7 +14969,7 @@ h4, h5, h6 {
     }
 
     .schedule_item__map ~ .schedule_item__wrap {
-        min-width: 60%
+        min-width: 75%
     }
 }
 
@@ -15015,7 +15009,7 @@ h4, h5, h6 {
 
 @media (min-width: 1200px) {
     .schedule_item__wrap {
-        width: 60%
+        width: 75%
     }
 }
 
@@ -18170,9 +18164,9 @@ h4, h5, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-bottom: 20px;
@@ -18191,9 +18185,9 @@ h4, h5, h6 {
 
 @media (min-width: 992px) {
     .footer_list {
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
         padding-left: 3px;
         padding-right: 3px
     }
@@ -18323,9 +18317,9 @@ h4, h5, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -18344,7 +18338,10 @@ h4, h5, h6 {
 
 @media (min-width: 992px) {
     .footer_first__liner {
-        max-width: none
+        max-width: none;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
     }
 }
 
@@ -18449,7 +18446,7 @@ h4, h5, h6 {
     }
 }
 
-.footer_first_about__name svg {
+.footer_first_about__name i {
     fill: #f5aec0;
     width: 33px;
     height: 25px;
@@ -18500,11 +18497,13 @@ h4, h5, h6 {
 }
 
 .footer_first_about .footer_icons__item_link {
-    border-color: #f5aec0
+    border-color: #f5aec0;
+    color: #f5aec0;
 }
 
 .footer_first_about .footer_icons__item_link:hover {
-    background-color: #f5aec0
+    background-color: #f5aec0;
+    color: #fff;
 }
 
 .footer_first_about .footer_icons__item_link:hover svg {
