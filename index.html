@@ -7,334 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css"/>
-<style>
 
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'GothamPro', Arial, sans-serif;
-}
-
-.mobile-banner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    display: none;
-    background: url(../image/test.jpg);
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* Современные браузеры */
-    background-size: cover;
-}
-
-iframe {
-    min-height: 200px;
-}
-
-.right-banner {
-    position: relative;
-    background: url(../image/test.jpg);
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* Современные браузеры */
-    background-size: cover;
-}
-
-.back {
-
-}
-
-.content_inner {
-    margin-top: 30px;
-    padding: 0 20px;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(224, 211, 211, 1));
-}
-
-
-.main_image {
-    background-image: url(../image/background.jpg);
-    height: 500px;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.top_image_opacity {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: .5;
-}
-
-.top_image_title {
-    position: absolute;
-    bottom: 30px;
-    color: white;
-    width: 100%;
-    text-align: center;
-
-    padding: 0 20px;
-}
-
-.link_wrap {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.link {
-    margin-top: 25px;
-}
-
-.link_a {
-    display: block;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
-    max-width: 300px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-
-    color: #ffffff;
-    font-size: 20px;
-    font-family: 'GothamPro', Arial, sans-serif;
-    line-height: 1.55;
-    font-weight: 700;
-    border-width: 1px;
-    border-radius: 10px;
-    background-color: #852eba;
-    background-position: center center;
-    border-color: transparent;
-    border-style: solid;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-    box-shadow: 0 0 20px 0 rgba(133, 46, 186, 1);
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-
-h1 {
-    position: absolute;
-    top: 66px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    width: 100%;
-}
-
-.items-list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.items-list_item {
-    font-size: 20px;
-    align-items: center;
-    position: relative;
-    width: 20%;
-}
-
-@media only screen and (max-width: 768px) {
-    .items-list_item {
-        width: 100%;
-    }
-
-    .right-banner {
-        display: none;
-    }
-
-    .mobile-banner {
-        display: block;
-    }
-}
-
-.icon-lotus {
-    background-image: url(../lotus.png);
-    width: 50px;
-    height: 50px;
-    display: block;
-    background-size: cover;
-    opacity: .6;
-    position: absolute;
-    left: 0;
-    top: -25px;
-}
-
-p {
-    position: relative;
-}
-
-.agenda {
-    position: relative;
-    line-height: 26px;
-    font-size: 18px;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 500px;
-}
-
-.condition {
-    padding: 0 20px;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgb(205 189 208));
-    margin-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-}
-
-
-.bonus {
-    font-size: 20px;
-}
-
-.content_charging {
-    max-width: 1000px;
-    margin: 0 auto;
-    height: 100%;
-    padding: 50px 0;
-}
-
-
-.card-text{
-    margin-top: 15px;
-}
-
-.help-link {
-    margin-top: 15px;
-}
-
-.price {
-    font-weight: bold;
-    color: #852eba;
-}img {
-
-
-    max-width: 100%;
-}
-
-.quote {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    height: 100%;
-    opacity: .4;
-    color: white;
-    background-color: black;
-}
-
-.quote-text {
-    position: absolute;
-    top: 50%;
-    color: white;
-    z-index: 2;
-    text-align: center;
-    padding: 0 10px;
-    left: 0;
-    transform: translateY(-50%);
-}
-
-
-.chat-btn {
-    margin-top: 10px;
-}
-
-
-------
-
-
-.card {
-    background-color: transparent;
-    border: 0;
-}
-
-.back-img {
-    height: 250px;
-    width: 300px;
-    background-size: cover;
-    background-image: url(../image/taro.jpg);
-}
-
-
-.content_charging {
-    max-width: 100%;
-    margin: 0 auto;
-    height: 100%;
-    padding: 50px 0;
-    padding: 0;
-}
-
-
-.home-featured .home-featured-inner .wrap {
-    background: #fff;
-    position: relative;
-    overflow: hidden;
-    padding: 1% 4% 2%;
-    min-height: 210px;
-    min-height: 13.25rem;
-}
-
-.home-featured .home-featured-inner .wrap {
-    margin-top: -180px;
-}
-body
-.wrap {
-    width: 940px;
-    width: 58.75rem;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 4%;
-}
-
-.items-row {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-
-.card {
-    flex-direction: row;
-    margin: 20px 0;
-    -webkit-box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6);
-    -moz-box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6);
-    box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6);
-    border: 0;
-}
-
-
-.home-featured {
-    padding: 0;
-    background-image: url(../test.jpg);
-    height: 400px;
-    background-size: cover;
-}
-
-
-.card-title {
-    text-align: left;
-}
-
-.accordion {
-    margin: 0 auto;
-}
-
-.formats {
-    margin: 0 auto;
-}
-
-</style>
 
 </head>
 <body>
@@ -472,8 +145,74 @@ body
             </div>
           </div>
         </div>
+
+
+        <div class="row experts">
+          <h2>Эксперты клуба в октябре</h2>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="img-exp fit"></div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Браим Екатерина</strong>
+
+                  <a href="https://www.instagram.com/braimkaterina/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg>
+                  </a>
+
+                  <br>
+                  Тренер по фитнесу с высшим спортивным образованием. Нутрициолог<br><br>
+                  Сторонник не здорового, а адекватного образа жизни. Противник жестких диет и ограничений.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="img-exp yoga"></div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Горбач Виктория</strong>
+                  <a href="https://www.instagram.com/vikky_gorbach/">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg>
+                </a>
+
+                  <br>
+                  Йога-тренер, терапевт с тибетскими чашами<br><br>
+                  Помогаю наладить контакт с телом, повысить уровень энергии, снизить тревожность, полюбить себя и свое тело безусловно.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="img-exp"></div>
+              <div class="card-body">
+                <p class="card-text">
+                  <strong>Цыдзик Анастасия</strong>
+
+                  <a href="https://www.instagram.com/cosmetolog.tsydzik/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg>
+                  </a>
+                  <br>
+                  Косметолог-эстетист<br><br>
+                  Практикую с 2021 года
+                  Моя главная цель - научить помогать себе самостоятельно, правильно и максимально бережно.
+                  Доношу сложное - простым языком.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="row formats col-md-8">
-          <div class="col-sm-6">
+          <h2>Форматы участия</h2>
+          <div class="col-sm-12">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Online формат</h5>
@@ -482,7 +221,7 @@ body
               </div>
             </div>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-12">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Offline формат</h5>
@@ -498,6 +237,11 @@ body
       </div>
     </div>
   </section>
+
+<footer>
+  Если у вас остались вопросы будем рады ответить в
+  <a href="https://t.me/vikky_sin">tелеграмм канал</a>
+</footer>
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
