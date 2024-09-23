@@ -8,6 +8,380 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css"/>
 
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'GothamPro', Arial, sans-serif;
+}
+
+.mobile-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    display: none;
+    background: url(../image/test.jpg);
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    background-size: cover;
+}
+
+iframe {
+    min-height: 200px;
+}
+
+.right-banner {
+    position: relative;
+    background: url(../image/test.jpg);
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    background-size: cover;
+}
+
+.back {
+
+}
+
+.content_inner {
+    margin-top: 30px;
+    padding: 0 20px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(224, 211, 211, 1));
+}
+
+
+.main_image {
+    background-image: url(../image/background.jpg);
+    height: 500px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.top_image_opacity {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+}
+
+.top_image_title {
+    position: absolute;
+    bottom: 30px;
+    color: white;
+    width: 100%;
+    text-align: center;
+
+    padding: 0 20px;
+}
+
+.link_wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.link {
+    margin-top: 25px;
+}
+
+.link_a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    max-width: 300px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'GothamPro', Arial, sans-serif;
+    line-height: 1.55;
+    font-weight: 700;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: #852eba;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    box-shadow: 0 0 20px 0 rgba(133, 46, 186, 1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+h1 {
+    position: absolute;
+    top: 66px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.items-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.items-list_item {
+    font-size: 20px;
+    align-items: center;
+    position: relative;
+    width: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+    .items-list_item {
+        width: 100%;
+    }
+
+    .right-banner {
+        display: none;
+    }
+
+    .mobile-banner {
+        display: block;
+    }
+}
+
+.icon-lotus {
+    background-image: url(../lotus.png);
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-size: cover;
+    opacity: .6;
+    position: absolute;
+    left: 0;
+    top: -25px;
+}
+
+p {
+    position: relative;
+}
+
+.agenda {
+    position: relative;
+    line-height: 26px;
+    font-size: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 500px;
+}
+
+.condition {
+    padding: 0 20px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgb(205 189 208));
+    margin-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+
+.bonus {
+    font-size: 20px;
+}
+
+.content_charging {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 50px 0;
+}
+
+
+.card-text{
+    margin-top: 15px;
+}
+
+.help-link {
+    margin-top: 15px;
+}
+
+.price {
+    font-weight: bold;
+    color: #852eba;
+}img {
+
+
+    max-width: 100%;
+}
+
+.quote {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    opacity: .4;
+    color: white;
+    background-color: black;
+}
+
+.quote-text {
+    position: absolute;
+    top: 50%;
+    color: white;
+    z-index: 2;
+    text-align: center;
+    padding: 0 10px;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+
+.chat-btn {
+    margin-top: 10px;
+}
+
+
+------
+
+
+.card {
+    background-color: transparent;
+    border: 0;
+}
+
+.back-img {
+    height: 250px;
+    width: 300px;
+    background-size: cover;
+    background-image: url(../image/taro.jpg);
+}
+
+
+.content_charging {
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 50px 0;
+    padding: 0;
+}
+
+
+.home-featured .home-featured-inner .wrap {
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 1% 4% 2%;
+    min-height: 210px;
+    min-height: 13.25rem;
+}
+
+.home-featured .home-featured-inner .wrap {
+    margin-top: -180px;
+}
+body
+.wrap {
+    width: 940px;
+    width: 58.75rem;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.items-row {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.card {
+    flex-direction: row;
+    margin: 20px 0;
+    -webkit-box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6);
+    -moz-box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6);
+    box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6);
+    border: 0;
+}
+
+
+.home-featured {
+    padding: 0;
+    background-image: url(../test.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: left;
+}
+
+
+.card-title {
+    text-align: left;
+}
+
+.accordion {
+    margin: 0 auto 50px auto;
+}
+
+.formats {
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.experts {
+    background-color: #f0f0f0;
+    padding: 30px;
+}
+
+.img-exp {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 100%;
+    background-image: url('../nast.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.img-exp.fit {
+    background-image: url('../fir.jpg');
+}
+
+
+.img-exp.yoga {
+    background-image: url('../vika.jpg');
+}
+
+.card {
+    flex-direction: column;
+    box-shadow: none;
+    background: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #198754;
+    background-color: #f0f0f0;
+}
+
+.formats .card, footer {
+    background-color: #f0f0f0;
+}
+
+footer {
+    padding: 40px;
+}
+
+  
+</style>
+
 
 </head>
 <body>
